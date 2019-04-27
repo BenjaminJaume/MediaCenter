@@ -1,0 +1,14 @@
+PHP :
+
+$file = str_replace(" ", "*", $file);
+$handle = popen ("start /B E:\Logiciel\wamp\www\batch.bat $file", 'r');
+pclose ($handle);
+
+Batch :
+
+cd ..
+cd ..
+cd ..
+cd "1) Films"
+cd "1Nouveaux"
+copy "%1%" Vus
